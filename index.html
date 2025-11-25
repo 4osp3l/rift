@@ -40,7 +40,7 @@ footer{font-size:12px;color:var(--muted);text-align:center;margin-top:10px}
 <div class="app" role="application" aria-label="ReconShare">
 <div class="left">
 <h1>Rift</h1>
-<p class="lead">Upload your target recon data (.zip) and preview files in-browser. Generate a share link.</p>
+<p class="lead">Upload your target recon data (.zip) and preview files in-browser.</p>
 <label class="dropzone" id="dropzone">Drop .zip here or <strong style="color:var(--accent)"> browse</strong>
 <input id="fileinput" type="file" accept=".zip" />
 </label>
@@ -50,7 +50,6 @@ footer{font-size:12px;color:var(--muted);text-align:center;margin-top:10px}
 <strong>Files</strong>
 <div class="actions">
 <button class="btn btn-ghost" id="downloadAll">Download file</button>
-<button class="btn btn-primary" id="genLink">Generate link</button>
 </div>
 </div>
 <ul class="filelist" id="filelist"></ul>
@@ -63,7 +62,6 @@ footer{font-size:12px;color:var(--muted);text-align:center;margin-top:10px}
 <div class="toolbar">
 <div style="flex:1">Preview</div>
 <div style="display:flex;gap:8px;align-items:center">
-<button class="btn btn-ghost" id="refresh">Refresh</button>
 <button class="btn" id="clear">Clear</button>
 </div>
 </div>
@@ -71,10 +69,8 @@ footer{font-size:12px;color:var(--muted);text-align:center;margin-top:10px}
 <div class="empty" id="empty">No file selected. Upload a .zip and click any file to preview it's contents.</div>
 </div>
 <div style="margin-top:12px;display:flex;gap:8px;align-items:center">
-<input class="shareinput" id="shareURL" readonly placeholder="Generated link appears here" />
-<button class="btn btn-primary" id="copyBtn">Copy</button>
 </div>
-<footer>@4osp3l</footer>
+<footer></footer>
 </div>
 </div>
 <script>
@@ -171,3 +167,4 @@ clearBtn.addEventListener('click',()=>{currentZipBytes=null;currentFiles=[];file
 </body>
 
 </html>
+
