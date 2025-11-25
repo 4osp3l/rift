@@ -3,8 +3,4 @@ Rift is a platform built for bug bounty hunters and security researchers, it let
 
 # Key features of rift
 
-> Instant file preview : View code, text, and images directly inside your .zip.
-
-> Shareable links : Generate temporary links for collaborators.
-
-> Secure and private : Links work without storing files on a server.
+> Instant file preview : View code, text, HTML, and images directly inside your .zip.
