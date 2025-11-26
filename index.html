@@ -102,13 +102,19 @@ function previewFile(content){
 
 // Add message to chat
 function addMsg(text, type){
+  if(type === "bot") {
+    // Wrap all * characters in a span
+    text = text.replace(/\*/g, '<span class="hide-asterisk">*</span>');
+  }
+
   const div = document.createElement("div");
   div.className = "ai-msg " + (type==="user"?"ai-user":"ai-bot");
-  div.textContent = text;
+  div.innerHTML = text; // use innerHTML to render the span
   aiMessages.appendChild(div);
   aiMessages.scrollTop = aiMessages.scrollHeight;
   return div;
 }
+
 
 // Show typing dots
 function showTyping(){
@@ -173,4 +179,5 @@ aiInput.addEventListener("keypress", (e)=>{
 
 </body>
 </html>
+
 
