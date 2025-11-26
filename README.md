@@ -16,6 +16,9 @@ Rift is a lightweight, in-browser extension designed to help security researcher
 > Share Individual Files
 - Generate a shareable link for a single file. Anyone opening the link can view the file in their browser.
 
+## AI Assistant
+Rift comes with a built-in AI Assistant that helps you analyze and understand the files you upload; you can also communicate with the AI directly.
+
 ## Installation
 Chrome Extension ( Recommended)
 1. Clone or download this repository.
