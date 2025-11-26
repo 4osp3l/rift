@@ -20,14 +20,14 @@ Rift is a lightweight, in-browser extension designed to help security researcher
 Rift comes with a built-in AI Assistant that helps you analyze and understand the files you upload; you can also communicate with the AI directly.
 
 ## Installation
-Chrome Extension ( Recommended)
+Chrome Extension ( AI assistant broken )
 1. Clone or download this repository.
 2. Open chrome://extensions/ in your Chrome browser.
 3. Enable Developer mode.
 4. Click "Load unpacked" and select the Rift folder.
 5. Pin the extension for quick access.
 
-Standalone Web Version
+Standalone Web Version ( Recommended )
 1. Visit https://4osp3l.github.io/rift/ in your browser.
 2. Drag & drop your ZIP file to get started.
 
