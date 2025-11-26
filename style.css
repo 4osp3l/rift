@@ -491,20 +491,3 @@ input[type=file]{display:none;}
   0%, 80%, 100% { opacity: 0.2; }
   40% { opacity: 1; }
 }
-
-/* Hide asterisks visually */
-.ai-msg.ai-bot {
-  /* This uses a clever combination of text-shadow and transparent color */
-  color: #333;                  /* normal text color */
-}
-
-.ai-msg.ai-bot::before {
-  content: attr(data-text);
-  visibility: hidden;           /* hide the original text copy */
-}
-
-/* Hide all asterisks */
-.ai-msg.ai-bot span.hide-asterisk {
-  color: transparent;           /* makes * invisible */
-  text-shadow: none;
-}
