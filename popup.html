@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rift</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+  <div class="left">
+    <h1>Rift</h1>
+    <p class="lead"></p>
+
+    <label class="dropzone" id="dropzone">
+      Drop .zip here or  <strong style="color:var(--accent)"> browse</strong>
+      <input id="fileinput" type="file" accept=".zip" />
+    </label>
+
+    <div class="meta" id="meta"></div>
+
+    <div class="files">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+        <strong>Files</strong>
+        <button class="btn btn-ghost" id="downloadAll">Download</button>
+      </div>
+      <ul class="filelist" id="filelist"></ul>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="toolbar">
+      <div style="flex:1">Preview</div>
+      <button class="btn" id="clear">Clear</button>
+    </div>
+
+    <div class="preview" id="preview">
+      <div class="empty" id="empty">No file selected. Upload a .zip and click any file to preview it.</div>
+    </div>
+  </div>
+</div>
+<script src="jszip.min.js"></script>
+<script src="lz-string.min.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

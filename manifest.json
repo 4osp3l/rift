@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Rift",
+  "description": "Rift is a platform built for bug bounty hunters and security researchers, it lets you upload your target's recon data as a .zip file and explore its contents instantly",
+  "version": "2.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Rift"
+  },
+  "permissions": [
+    "storage",
+    "clipboardWrite"
+  ],
+  "icons": {
+    "16": "icon.jpg"
+  }
+}
