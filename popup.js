@@ -223,3 +223,4 @@ function highlightSelectedFile(idx) {
         console.error("Error opening shared file:", e);
     }
 })();
+
