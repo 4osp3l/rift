@@ -65,11 +65,19 @@
 <script>
 const GEMINI_API_KEY = "QWlaYVN5RDRmUDZJTFk1dHp6a2lqeXpWS3VhLUxLOXpUOERObFVZ";
 
-function decodeBase64(str) {
+function decodeBase64UrlSafe(str) {
+  // Convert URL-safe chars to standard Base64 chars
+  str = str.replace(/-/g, "+").replace(/_/g, "/");
+  
+  // Add padding if missing
+  const pad = str.length % 4;
+  if (pad === 2) str += "==";
+  else if (pad === 3) str += "=";
+  
   return atob(str);
 }
 
-const apiKey = decodeBase64(GEMINI_API_KEY);
+const apiKey = decodeBase64UrlSafe(GEMINI_API_KEY);
   
 // Gemini API call
 async function sendToGemini(promptText){
@@ -180,6 +188,7 @@ aiInput.addEventListener("keypress", (e)=>{
 
 </body>
 </html>
+
 
 
 
