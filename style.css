@@ -465,7 +465,7 @@ input[type=file]{display:none;}
 .ai-msg{margin-bottom:8px;padding:6px 10px;border-radius:6px;line-height:1.4;white-space:pre-wrap;}
 .ai-user{color:white;align-self:flex-end;}
 .ai-bot{background:black;color:white;align-self:flex-start;}
-.ai-input-bar{display:flex;gap:6px;border-top:1px solid var(--ai-border);padding:8px;}
+.ai-input-bar{display:flex;gap:6px;border-top:4px solid var(--ai-border);padding:8px;}
 .ai-input-bar input{flex:1;padding:8px;background:#222;border:1px solid #444;color:white;border-radius:4px;}
 .ai-input-bar button{padding:8px 12px;background:black;color:white;font-weight:bold;border:none;cursor:pointer;border-radius:4px;}
 
@@ -509,4 +509,5 @@ input[type=file]{display:none;}
   0%, 80%, 100% { opacity: 0; }
   40% { opacity: 1; }
 }
+
 
