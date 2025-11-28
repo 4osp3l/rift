@@ -85,10 +85,10 @@ async function sendToGemini(promptText){
       }
     );
     const data = await res.json();
-    return data?.candidates?.[0]?.content?.parts?.[0]?.text || "⚠️ No response";
+    return data?.candidates?.[0]?.content?.parts?.[0]?.text || "No response";
   } catch(e){
     console.error("Gemini API error:", e);
-    return "⚠️ Error contacting Gemini API";
+    return "Error contacting Gemini API";
   }
 }
 
@@ -180,6 +180,7 @@ aiInput.addEventListener("keypress", (e)=>{
 
 </body>
 </html>
+
 
 
 
