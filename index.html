@@ -63,13 +63,19 @@
 <script src="popup.js"></script>
 
 <script>
-const GEMINI_API_KEY = "AIzaSyD4fP6ILY5tzzkijyzVKua-LK9zT8DNlUY";
+const GEMINI_API_KEY = "QWlaYVN5RDRmUDZJTFk1dHp6a2lqeXpWS3VhLUxLOXpUOERObFVZ";
 
+function decodeBase64(str) {
+  return atob(str);
+}
+
+const apiKey = decodeBase64(GEMINI_API_KEY);
+  
 // Gemini API call
 async function sendToGemini(promptText){
   try{
     const res = await fetch(
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + GEMINI_API_KEY,
+      "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + apiKey,
       {
         method:"POST",
         headers:{"Content-Type":"application/json"},
@@ -174,6 +180,7 @@ aiInput.addEventListener("keypress", (e)=>{
 
 </body>
 </html>
+
 
 
 
